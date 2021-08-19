@@ -14,83 +14,102 @@
 
 <body>
   <main class="rover-hp-container">
+    <div class="container">
+      <!--Rover Header-->
+      <header class="flex rover-header-container">
+        <section class="flex center rover-header-left">
+          <img class="rover-header-image" src="img/logo.png" alt="Rover logo">
+        </section>
+        <section class="flex center rover-header-right">
+          <a class="rover-header-link" href="#">Search Sitters</a>
+          <a class="rover-header-link" href="#">Become a Sitter</a>
+          <a class="rover-header-link" href="#">Our Services</a>
+          <a class="rover-header-link" href="#">Sign Up</a>
+          <a class="rover-header-link" href="#">Sign In</a>
+          <a class="rover-header-link" href="#">Help</a>
+        </section>
+        <section class="rover-header-right-mobile">
+          <a href="" onclick="myFunction()">
+            <img src="img/hamburger.svg" alt="hamburger-icon">
+          </a>
+        </section>
+      </header>
 
-    <!--Rover Header-->
-    <header class="rover-header-container">
-      <section class="rover-header-left">
-        <img class="rover-header-image" src="img/logo.png" alt="Rover logo">
-        <a class="rover-header-link" href="#">Search Sitters</a>
-        <a class="rover-header-link" href="#">Become a Sitter</a>
-        <a class="rover-header-link" href="#">Our Services</a>
-      </section>
-      <section class="rover-header-right">
-        <a class="rover-header-link" href="#">Sign Up</a>
-        <a class="rover-header-link" href="#">Sign In</a>
-        <a class="rover-header-link" href="#">Help</a>
-      </section>
-      <section class="rover-header-right-mobile">
-        <img src="img/hamburger.svg" alt="hamburger-icon">
-      </section>
-    </header>
+    </div>
 
     <!--Rover Hero Container-->
-    <section class="rover-hero-container">
-      <h1 class="rover-hero-title">We're the Dog People</h1>
-      <p>Book trusted, local pet sitters and walkers who will care for your dog or cat like you would.</p>
-      <div class="rover-button rover-cta">Search</div>
-      <div class="rover-button rover-cta-mobile">Discover local sitters</div>
+    <section class="flex center rover-hero-container">
+      <div class="content-container">
+        <h1 class="rover-hero-title">We're the Dog People</h1>
+        <p>Book trusted, local pet sitters and walkers who will care for your dog or cat like you would.</p>
+        <button class="rover-button rover-cta">Search</button>
+        <button class="rover-button rover-cta-mobile">Discover local sitters</button>
+      </div>
     </section>
 
     <!--Rover Facts Container-->
     <section class="rover-middle-section">
-      <h2>Services for every dog and cat</h2>
+      <div class="flex justify">
+        <h2>Services for every dog and cat</h2>
+      </div>
       <div class="rover-mobile-hero-container">
         <img class="rover-mobile-hero" src="img/mobile-hero-1.jpg" alt="mobile hero">
         <img class="rover-mobile-hero" src="img/mobile-hero-2.jpg" alt="mobile hero">
       </div>
 
-      <section class="rover-two-boxes-container">
+
+      <section class="grid rover-two-boxes-container">
         <section class="rover-facts-container">
-          <div class="rover-fact-indiv rover-fact-indiv-1">
+          <div class="flex rover-fact-indiv rover-fact-indiv-1">
             <img src="img/suitcase.png" alt="Suitcase image">
-            <h3>Dog Boarding</h3>
-            <p>Perfect if you need overnight pet care.</p>
+            <div class="desc-container">
+              <h3>Dog Boarding</h3>
+              <p>Perfect if you need overnight pet care.</p>  
+            </div>
           </div>
-          <div class="rover-fact-indiv rover-fact-indiv-2">
+          <div class="flex rover-fact-indiv rover-fact-indiv-2">
             <img src="img/house.png" alt="House image">
-            <h3>House Sitting</h3>
-            <p>Great if you need overnight pet or house-sitting services.</p>
+            <div class="desc-container">
+              <h3>House Sitting</h3>
+              <p>Great if you need overnight pet or house-sitting services.</p>  
+            </div>
           </div>
-          <div class="rover-fact-indiv rover-fact-indiv-3">
+          <div class="flex rover-fact-indiv rover-fact-indiv-3">
             <img src="img/paws.png" alt="Paws image">
-            <h3>Dog walking</h3>
-            <p>Whenever your dog needs a walk.</p>
+            <div class="desc-container">
+              <h3>Dog walking</h3>
+              <p>Whenever your dog needs a walk.</p>  
+            </div>
           </div>
-          <div class="rover-fact-indiv rover-fact-indiv-4">
+          <div class="flex rover-fact-indiv rover-fact-indiv-4">
             <img src="img/sun.png" alt="Sun image">
-            <h3>Doggy Day Care</h3>
-            <p>Daytime pet care in your sitter’s dog-friendly home.</p>
+            <div class="desc-container">
+              <h3>Doggy Day Care</h3>
+              <p>Daytime pet care in your sitter’s dog-friendly home.</p>  
+            </div>
           </div>
-          <div class="rover-fact-indiv rover-fact-indiv-5">
+          <div class="flex rover-fact-indiv rover-fact-indiv-5">
             <img src="img/food.png" alt="Food image">
-            <h3>Drop-In Visits</h3>
-            <p>For check-ins and play dates.</p>
+            <div class="desc-container">
+              <h3>Drop-In Visits</h3>
+              <p>For check-ins and play dates.</p>  
+            </div>
           </div>
         </section>
 
         <section class="rover-cta-box">
           <div class="rover-cta-container">
-            <header class="rover-cta-header">
+            <header class="flex justify rover-cta-header">
               <img src="img/shield.png" alt="shield icon">
               <p>Rover accepts less than 20% of potential sitters</p>
             </header>
-            <div class="rover-cta-bottom-container">
+            <div class="flex flex-column rover-cta-bottom-container">
               <ul class="rover-facts">
                 <li>All new sitters pass a basic background check</li>
                 <li>All sitters provide a detailed profile and personal information</li>
                 <li>All sitters are approved by our team of sitter specialists</li>
               </ul>
-              <div class="rover-cta">Book your next Rover sitter</div>
+              <button class="rover-button">Book your next Rover sitter</button>
             </div>
           </div>
           <p class="rover-protections">All services booked on Rover are backed by the Rover Guarantee, 24/7 Support, Photo Updates, and our <a href="#">Reservation Protection</a>.</p>

@@ -17,3 +17,13 @@
  * 1) Make the responsive menu work!
  * 2) Implement a modal window - "Sign up now" CTA when someone clicks the 'Sign Up' button
  */ 
+
+ function myFunction() {
+    console.log("button is clicked");
+   var x = document.getElementsByClassName("rover-header-container");
+   if (x.className === "rover-header-container") {
+     x.className += " responsive";
+   } else {
+     x.className = "rover-header-container";
+   }
+ }

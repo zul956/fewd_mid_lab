@@ -13,7 +13,179 @@
  */
 
 /* Globals */
+.container {
+  width: 100%;
+}
+
+.rover-header-container {
+  width: 100%;
+}
+
+.rover-header-right {
+  position: absolute;
+  right: 2;
+}
+
 body {
   font-family: 'Cabin', sans-serif;
 }
 
+.flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+}
+
+.rover-header-right-mobile {
+  display: none;
+} 
+
+@media screen and (max-width: 600px) {
+  .rover-header-right {display: none;}
+  .rover-header-right-mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .rover-hero-title {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .rover-header-container.responsive {position: relative;}
+  .rover-header-container.responsive .rover-header-right-mobile {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.rover-header-container.responsive .rover-header-right {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+.rover-hero-container {
+  background-image: url("../img/hero.jpg");
+  height: 300px;
+  background-size: cover;
+}
+
+.justify {
+  justify-content: center;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.rover-cta-mobile {
+  display: none;
+}
+
+.rover-button {
+  background-color: green;
+  color: white;
+  width: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .rover-hero-container {
+    background-image: none;
+  }
+
+  .rover-cta-mobile {
+    display: flex;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: center;
+  }
+  
+  .rover-cta {
+    display: none;
+  }
+
+}
+
+.rover-two-boxes-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.rover-mobile-hero-container {
+  display: none;
+}
+
+/* .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+.rover-fact-indiv img {
+  width: 100px;
+}
+
+.desc-container {
+  padding-left: 15px;
+}
+
+.rover-cta-header img {
+  width: 50px;
+}
+
+.rover-cta-header {
+  background-color: rgb(219, 213, 213);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.rover-cta-header p {
+  padding-left: 8px;
+}
+
+.rover-cta-bottom-container {
+  height: 200px;
+}
+
+.rover-cta-bottom-container ul {
+  height: 40%;
+  padding-top: 25px;
+  margin-top: 10px;
+}
+
+.rover-cta-bottom-container button {
+  margin-top: 10px;
+  width: 90%;
+}
+
+.flex-column {
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .rover-mobile-hero-container {
+    display: flex;
+  }
+
+  .rover-two-boxes-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rover-cta-bottom-container button {
+    display: none;
+  }
+
+  .rover-protections {
+    display: none;
+  }
+}
